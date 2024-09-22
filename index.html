@@ -5,21 +5,75 @@
   <meta name="viewport" content="width=title, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.2/css/all.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fabio's Profile Page</title>
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fabio's Page</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#introduction">Introduction</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#hobbies">Hobbies</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#videogames">Video Games</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#dog">My Dog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#findme">Find Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="card" id="introduction">
       <h1>Hello, I'm Fábio 🤓</h1>
-      <img src="images/profile.jpeg" width="120px" alt="Fabio Freitas" class="img-circle">
+      <div class="d-flex justify-content-center">
+        <img src="images/profile.jpeg" width="140px" alt="Fabio Freitas" class="img-circle">
+      </div>
       <p>This year, I decided to change my life and learn how to code with the best coding bootcamp in the world, Le Wagon. I'm excited to see where this will take me! ✈️🌎</p>
       <a href="https://www.linkedin.com/in/fhcfreitas/" target="_blank" class="btn-green">LinkedIn</a>
     </div>
 
-    <div class="card">
+    <!-- Hobbies section -->
+    <div class="card" id="hobbies">
+      <h2>Hobbies ✨</h2>
+      <p>
+        I love to travel and get to know new places, going to bars with my friends and running to clear my mind.
+      </p>
+    </div>
+
+    <!-- Video Games section -->
+    <div class="card" id="videogames">
+      <h2>Video Games 🎮</h2>
+      <p>I'm a video game enthusiast, especially with Nintendo ones. I like to play games such as Zelda, Mario, Metroid and Final Fantasy.</p>
+    </div>
+
+    <!-- Dog section -->
+    <div class="card" id="dog">
+      <h2>My dog 🐶</h2>
+      <p>I have the dearest dog in the world, her name is Michella and she is always happy and full of joy.</p>
+      <div class="d-flex justify-content-center">
+        <img src="images/michella.jpg" width="120px" alt="Michella" class="img-circle">
+      </div>
+    </div>
+
+    <!-- Find Me section -->
+    <div class="card" id="findme">
       <h2>Find Me</h2>
-      <ul>
+      <ul class="list-inline">
         <li class="list-inline">
           <a href="https://github.com/fhcfreitas" target="_blank">
             <i class="fa-brands fa-square-github socialmediaapp">
@@ -41,5 +95,9 @@
       </ul>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>
